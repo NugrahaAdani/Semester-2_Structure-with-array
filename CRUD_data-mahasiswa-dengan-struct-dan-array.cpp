@@ -181,19 +181,7 @@ int main()
 
             if (count > 0)
             {
-                cout << "====================================================================\n";
-                cout << "|       NPM       |         Nama        |    Nilai    | Huruf Mutu |\n";
-                cout << "====================================================================\n";
-
-                for (int i = 0; i < count; i++)
-                {
-                    cout << "| " << setw(16) << left << mhs[i].npm
-                         << "| " << setw(20) << left << mhs[i].nama
-                         << "| " << setw(12) << left << mhs[i].nilai.nilaiakhir
-                         << "| " << setw(10) << left << mhs[i].nilai.nilaihuruf << " |\n";
-                }
-
-                cout << "====================================================================\n";
+                tampildata(mhs, count);
 
                 cout << "Ingin edit data? (y/n): ";
                 cin >> t;
@@ -279,19 +267,7 @@ int main()
 
             if (count > 0)
             {
-                cout << "====================================================================\n";
-                cout << "|       NPM       |         Nama        |    Nilai    | Huruf Mutu |\n";
-                cout << "====================================================================\n";
-
-                for (int i = 0; i < count; i++)
-                {
-                    cout << "| " << setw(16) << left << mhs[i].npm
-                         << "| " << setw(20) << left << mhs[i].nama
-                         << "| " << setw(12) << left << mhs[i].nilai.nilaiakhir
-                         << "| " << setw(10) << left << mhs[i].nilai.nilaihuruf << " |\n";
-                }
-
-                cout << "====================================================================\n";
+                tampildata(mhs, count);
 
                 cout << "Ingin hapus data? (y/n): ";
                 cin >> t;
